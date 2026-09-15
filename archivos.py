@@ -1,27 +1,11 @@
-"""
-archivos.py
-Módulo de utilidades para la persistencia de datos en archivos JSON.
-Centraliza la lectura y escritura para que el resto de módulos
-no tengan que preocuparse por el manejo de errores de archivos.
-"""
-
 import json
 import os
-
 CARPETA_DATOS = "datos"
-
-
 def _ruta(nombre_archivo):
-    """Construye la ruta completa de un archivo dentro de la carpeta datos/."""
     return os.path.join(CARPETA_DATOS, nombre_archivo)
 
 
 def cargar_datos(nombre_archivo):
-    """
-    Carga una lista de datos desde un archivo JSON.
-    Si el archivo no existe o está vacío/corrupto, retorna una lista vacía
-    en lugar de lanzar una excepción, para que el programa no se caiga.
-    """
     ruta = _ruta(nombre_archivo)
     if not os.path.exists(ruta):
         return []
@@ -39,10 +23,6 @@ def cargar_datos(nombre_archivo):
 
 
 def guardar_datos(nombre_archivo, datos):
-    """
-    Guarda una lista de datos (dicts) en un archivo JSON, creando la carpeta
-    datos/ si no existe todavía.
-    """
     os.makedirs(CARPETA_DATOS, exist_ok=True)
     ruta = _ruta(nombre_archivo)
     try:
