@@ -1,15 +1,3 @@
-"""
-main.py
-Sistema de Préstamo de Equipos Tecnológicos - Colegio San Marín
-Punto de entrada del programa: presenta un menú de consola que
-integra los módulos de equipos, estudiantes y préstamos.
-
-Alcance de este Sprint: HU01, HU02, HU03 y HU04.
-
-Proyecto desarrollado aplicando Scrum - MVP (Producto Mínimo Viable)
-Equipo: Juan David, Christian y Daniela
-"""
-
 import equipos
 import estudiantes
 import prestamos
