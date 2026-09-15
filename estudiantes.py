@@ -1,9 +1,3 @@
-"""
-estudiantes.py
-Gestión del registro de estudiantes.
-Historia de usuario cubierta: HU03.
-"""
-
 import re
 from archivos import cargar_datos, guardar_datos
 
@@ -11,16 +5,11 @@ ARCHIVO = "estudiantes.json"
 
 
 def _correo_valido(correo):
-    """Validación simple de formato de correo electrónico."""
     patron = r"^[\w.+-]+@[\w-]+\.[a-zA-Z]{2,}$"
     return re.match(patron, correo) is not None
 
 
 def registrar_estudiante(documento, nombre, correo, programa):
-    """
-    HU03 - Registra un estudiante para poder asociarlo a préstamos.
-    Valida que el documento sea único y que los campos no estén vacíos.
-    """
     documento = documento.strip()
     nombre = nombre.strip()
     correo = correo.strip()
@@ -52,12 +41,10 @@ def registrar_estudiante(documento, nombre, correo, programa):
 
 
 def listar_estudiantes():
-    """Retorna la lista completa de estudiantes registrados."""
     return cargar_datos(ARCHIVO)
 
 
 def buscar_estudiante(documento):
-    """Busca un estudiante por documento. Retorna el diccionario o None si no existe."""
     estudiantes = cargar_datos(ARCHIVO)
     for est in estudiantes:
         if est.get("documento") == documento.strip():
