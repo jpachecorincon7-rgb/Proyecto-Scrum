@@ -33,9 +33,6 @@ proyecto/
     └── prestamos.json
 ```
 
-## Requisitos
-
-- Python 3.8 o superior (no requiere librerías externas)
 
 ## Instalación y ejecución
 
