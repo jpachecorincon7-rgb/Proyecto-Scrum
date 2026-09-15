@@ -1,9 +1,3 @@
-"""
-prestamos.py
-Gestión de préstamos de equipos.
-Historia de usuario cubierta: HU04.
-"""
-
 from datetime import datetime
 from archivos import cargar_datos, guardar_datos
 from equipos import buscar_equipo, actualizar_estado_equipo
@@ -13,7 +7,6 @@ ARCHIVO = "prestamos.json"
 
 
 def _siguiente_id(prestamos):
-    """Genera un id consecutivo tipo PR001, PR002, ..."""
     maximo = 0
     for p in prestamos:
         idp = p.get("id", "")
@@ -27,11 +20,6 @@ def _siguiente_id(prestamos):
 
 
 def registrar_prestamo(codigo_equipo, documento_estudiante):
-    """
-    HU04 - Registra el préstamo de un equipo a un estudiante.
-    Valida que el estudiante exista, que el equipo exista y que esté disponible.
-    Al registrar el préstamo, cambia el estado del equipo a 'Prestado'.
-    """
     equipo = buscar_equipo(codigo_equipo)
     if equipo is None:
         return False, "El equipo indicado no existe."
@@ -60,5 +48,4 @@ def registrar_prestamo(codigo_equipo, documento_estudiante):
 
 
 def listar_prestamos():
-    """Retorna todos los préstamos registrados (útil para revisar el archivo de datos)."""
     return cargar_datos(ARCHIVO)
