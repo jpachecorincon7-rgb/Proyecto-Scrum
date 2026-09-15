@@ -7,7 +7,7 @@ MVP desarrollado en Python aplicando el marco de trabajo **Scrum**, como parte d
 
 ## Alcance de este Sprint
 
-Del Product Backlog original (8 historias de usuario), el equipo seleccionó, con autorización del docente, las siguientes 4 para este Sprint:
+Del Product Backlog original (8 historias de usuario), el equipo seleccionó las siguientes 4 para este Sprint:
 
 - **HU01** — Registrar equipos tecnológicos
 - **HU02** — Consultar equipos registrados y su disponibilidad
