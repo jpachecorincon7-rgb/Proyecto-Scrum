@@ -1,0 +1,26 @@
+[
+    {
+        "documento": "1092567892",
+        "nombre": "Andrés",
+        "correo": "andres1@gmail.com",
+        "programa": "Ingeniería Industrial"
+    },
+    {
+        "documento": "1092776309",
+        "nombre": "Felipe",
+        "correo": "felipe2@gmail.com",
+        "programa": "Ingeniería de Sistemas"
+    },
+    {
+        "documento": "1092555439",
+        "nombre": "Camila",
+        "correo": "camila3@gmail.com",
+        "programa": "Ingeniería Civil"
+    },
+    {
+        "documento": "1092888201",
+        "nombre": "Miguel",
+        "correo": "miguel4@gmail.com",
+        "programa": "Diseño Gráfico"
+    }
+]
