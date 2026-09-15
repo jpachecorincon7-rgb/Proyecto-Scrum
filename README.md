@@ -1,6 +1,6 @@
 # Sistema de Préstamo de Equipos Tecnológicos
 
-MVP desarrollado en Python aplicando el marco de trabajo **Scrum**, como parte de la actividad evaluativa del curso *Scrum y Metodologías Ágiles*.
+Desarrollado en Python aplicando el marco de trabajo **Scrum**, como parte de la actividad evaluativa del curso *Scrum y Metodologías Ágiles*.
 
 **Institución:** Colegio San Marín
 **Equipo:** Juan David, Christian y Daniela
@@ -31,20 +31,6 @@ proyecto/
     ├── equipos.json
     ├── estudiantes.json
     └── prestamos.json
-```
-
-
-## Instalación y ejecución
-
-1. Clona o descarga este repositorio.
-2. Abre una terminal en la carpeta `proyecto/`.
-3. Ejecuta:
-
-```bash
-python3 main.py
-```
-
-4. Usa el menú numérico para navegar entre las opciones (registrar equipo, listar equipos, registrar estudiante, registrar préstamo).
 
 ## Historias de usuario cubiertas
 
